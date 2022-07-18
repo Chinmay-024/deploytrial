@@ -1,0 +1,75 @@
+.App {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.image{
+  height: 8vmin;
+
+}
+.label{
+  padding: 2%;
+}
+.App-logo {
+  margin: auto;
+  padding: 1%;
+  height: 12vmin;
+  /* pointer-events: none; */
+  background-color: #00aa95;
+  color: white;
+}
+.fillIcon{
+  background-color: #00aa95 !important;
+  width: 20%;
+}
+.form{
+  width: 40%;
+}
+
+.editor{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: auto;
+  border: #282c34;
+  width: 60%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.head{
+  /* width: 60%; */
+  display: flex;
+  padding-top: 5% ;
+  padding-right: 5% ;
+  flex-direction: column;
+  text-align: left;
+  margin: auto;
+  justify-content: space-between;
+  max-width: 60%;
+}
+
+.centre{
+  margin: auto;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  justify-content: center;
+  max-width: 60%;
+}
+.output{
+  margin: auto;
+  margin-bottom: 5rem;
+  padding: 2%;
+  text-align: center;
+  justify-content: center;
+  background-color: #00aa95;
+}
+
+.outputflex{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 60%;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.state{
+  font-weight: 400;
+}
