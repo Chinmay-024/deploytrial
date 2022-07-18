@@ -51,7 +51,7 @@ function App() {
             setTaskId(null);
             setTaskDetails(null);
             const { data } = await axios.post(
-                "http://localhost:5000/run",
+                "https://codein-app.herokuapp.com//run",
                 payload
             );
             if (data.taskId) {
@@ -61,7 +61,7 @@ function App() {
                 // poll here
                 pollInterval = setInterval(async () => {
                     const { data: statusRes } = await axios.get(
-                        `http://localhost:5000/status`,
+                        `https://codein-app.herokuapp.com//status`,
                         {
                             params: {
                                 id: data.taskId,
