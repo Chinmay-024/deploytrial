@@ -51,7 +51,7 @@ function App() {
             setTaskId(null);
             setTaskDetails(null);
             const { data } = await axios.post(
-                "http://52.140.121.152/run",
+                "http://20.204.14.46/run",
                 payload
             );
             if (data.taskId) {
@@ -61,7 +61,7 @@ function App() {
                 // poll here
                 pollInterval = setInterval(async () => {
                     const { data: statusRes } = await axios.get(
-                        `http://52.140.121.152/status`,
+                        `http://20.204.14.46/status`,
                         {
                             params: {
                                 id: data.taskId,
